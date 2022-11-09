@@ -79,6 +79,17 @@ article:hover {
 article.tweet header {
   padding-right: 0.5em;
   padding-left: 0.5em;
+
+  display: flex;
+  align-items: center;
+  
+}
+article.tweet header div {
+  display: flex;
+  align-items: center;
+ }
+article img {
+  width: 40px;
 }
 article.tweet p {
   padding-right: 0.5em;
