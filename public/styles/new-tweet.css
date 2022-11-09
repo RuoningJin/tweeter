@@ -1,8 +1,21 @@
+main {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .new-tweet {  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+main form {
+  width: 100%;
+  padding-bottom: 2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
 }
 
 #tweet-text {
@@ -45,6 +58,7 @@
 }
 
 .tweet {
+  width: 100%;
   height: 230px;
   padding-top: 1.5em;
   padding-bottom: 1em;
@@ -59,6 +73,9 @@
 }
 
 /* tweet boxes */
+article:hover {
+  box-shadow: 10px 10px rgb(198, 198, 198);
+}
 article.tweet header {
   padding-right: 0.5em;
   padding-left: 0.5em;
@@ -66,10 +83,13 @@ article.tweet header {
 article.tweet p {
   padding-right: 0.5em;
   padding-left: 0.5em;
+  padding-top: 0.5em;
+  font-weight: bold;
 }
 article.tweet header span {
   color:#cacaca;
   font-weight: bold;
+
 }
 article.tweet footer {
   border-top-style: inherit;
@@ -83,4 +103,9 @@ article.tweet footer div {
 article.tweet footer i {
   font-size: medium;
   padding-right: 0.5em;
+  padding-top: 0.5em;
+  color: #4056A1;
+}
+article.tweet footer i:hover {
+  color: rgb(199, 169, 0);
 }
