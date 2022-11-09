@@ -18,6 +18,9 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
 
     <!-- icons css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,6 +31,8 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
 
   <body>
@@ -39,8 +44,51 @@
         <i class="fa-sharp fa-solid fa-angles-down" style="color: red;"></i>
       </div>
     </nav>
+    <header class="header-position">
+
+      <div class="header-avatar">
+        <img src="/images/profile-hex.png"> 
+      </div>
+      <div class="header-name">
+          <h2>Your Name</h2>
+      </div>
+  </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+      <main class="container">
+        <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+          <form action="/tweets/" method="POST">
+            <label for="tweet-text"><b>What are you humming about?</b></label>
+            <textarea name="text" id="tweet-text"></textarea>
+            <div class="space-between">
+              <button class="tweet-button" type="submit">Tweet</button>
+              <output class="remainings" name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <section class="container" id="tweet-container">
+            <article class="tweet">
+              <header class="space-between">
+                <div>
+                  name and iconhere
+                </div>
+
+                <span>
+                  @SirIsaac
+                </span>
+              </header>
+              <p>If I have seen further it is by standing on the shoulders of giants</p>
+              <footer class="space-between">
+                <div>
+                  10 days ago
+                </div>
+                <i>
+                  moreicons
+                </i>
+              </footer>
+            </article>
+        </section>
+      </main>
   </body>
 </html>
