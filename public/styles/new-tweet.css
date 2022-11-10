@@ -28,6 +28,9 @@ main form {
   border-bottom-color: black;
   border-bottom-width: thick;
 }
+#tweet-text:focus {
+  outline: none;
+}
 
 .tweet-button {
   background-color: #4056A1;
