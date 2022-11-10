@@ -72,11 +72,14 @@ $(document).ready(function() {
     const dataSer = $(this).serialize();
 
     if (dataSer === 'text=') {
-      return alert('The content cannot be blank.');
+      $('#error-message2').slideUp();
+      return $('#error-message1').slideDown();
     }
     if (dataSer.length >= 145) {
-      return alert('The content exceeded the limit of 140 characters.');
+      $('#error-message1').slideUp();
+      return $('#error-message2').slideDown();
     }
+    $('p').slideUp();
     $.post({
       url: '/tweets',
       data: dataSer,
@@ -89,5 +92,5 @@ $(document).ready(function() {
             renderTweets(userData[userData.length - 1]);
           });
       });
-  });
+  });  
 });

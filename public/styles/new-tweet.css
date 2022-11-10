@@ -52,6 +52,12 @@ main form {
   color: red;
 }
 
+.new-tweet p {
+  display: none;
+  font-size: medium;
+  color: red;
+}
+
 .space-between {
   display: flex;
   justify-content: space-between;
