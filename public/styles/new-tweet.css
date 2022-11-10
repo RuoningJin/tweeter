@@ -61,7 +61,7 @@ main form {
   color: red;
 }
 
-.new-tweet p {
+.new-tweet .error-message {
   display: none;
   font-size: medium;
   color: red;

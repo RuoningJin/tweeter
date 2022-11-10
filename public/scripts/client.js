@@ -17,6 +17,7 @@ $(document).ready(function() {
 
   //rendering function to append user data onto the webpage
   const renderTweets = function(tweets) {
+    console.log(tweets);
     if (Array.isArray(tweets)) {
       for (const tweet of tweets) {
         const $tweet = createTweetElement(tweet);
@@ -88,7 +89,7 @@ $(document).ready(function() {
       $('#error-message1').slideUp();
       return $('#error-message2').slideDown();
     }
-    $('p').slideUp();
+    $('.error-message').slideUp();
     $.post({
       url: '/tweets',
       data: dataSer,
