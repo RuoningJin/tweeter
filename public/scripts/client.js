@@ -5,11 +5,15 @@
  */
 
 $(document).ready(function() {
-  
+
   $('#input-button').click(function() {
-    $('form').slideDown();
-    $('#tweet-text').focus();
-  });
+    if ($('form').css('display') === 'none') {
+      $('form').slideDown();
+      $('#tweet-text').focus();
+      return;
+    }
+    return $('form').slideUp();
+  })
 
   //rendering function to append user data onto the webpage
   const renderTweets = function(tweets) {
