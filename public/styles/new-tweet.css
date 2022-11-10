@@ -88,7 +88,7 @@ article.tweet header div {
   display: flex;
   align-items: center;
  }
-article img {
+article.tweet img {
   width: 40px;
 }
 article.tweet p {
