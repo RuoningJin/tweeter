@@ -26,3 +26,16 @@
   flex-direction: column;
   align-items: center;
 }
+
+#input-button {
+  all: unset;
+}
+#input-button i {
+  color: antiquewhite;
+  font-size: x-large;
+}
+#input-button i:hover {
+  color: gold;
+  transform: translate(0, 3px);
+
+}

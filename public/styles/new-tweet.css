@@ -11,11 +11,11 @@ main {
 }
 
 main form {
+  display: none;
   width: 100%;
-  padding-bottom: 2em;
   padding-left: 0.5em;
   padding-right: 0.5em;
-
+  padding-bottom: 2em;
 }
 
 #tweet-text {
@@ -42,6 +42,12 @@ main form {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 13px;
+}
+.tweet-button:hover {
+  background-color:goldenrod;
+}
+.tweet-button:active {
+  background-color: forestgreen;
 }
 
 .remainings {
