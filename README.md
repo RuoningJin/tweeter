@@ -6,9 +6,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["screenshot of mobile version"]
-!["screenshot of desktop version"]
-!["screenshot of adding new tweet"]
+!["screenshot of mobile version"](https://github.com/RuoningJin/tweeter/blob/master/docs/mobile-version.png?raw=true)
+!["screenshot of desktop version"](https://github.com/RuoningJin/tweeter/blob/master/docs/desktop-version.png?raw=true)
+!["screenshot of adding new tweet"](https://github.com/RuoningJin/tweeter/blob/master/docs/adding-new-tweet.png?raw=true)
 
 ## Dependencies
 
