@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -45,39 +46,43 @@
         <button class="btn" id="input-button"><i class="fa-sharp fa-solid fa-angles-down"></i></button>
       </div>
     </nav>
-    <header class="header-position">
+    <div class="responsive">
+      <header class="header-position">
 
-      <div class="header-avatar">
-        <img src="/images/profile-hex.png"> 
-      </div>
-      <div class="header-name">
-          <h2>Your Name</h2>
-      </div>
-  </header>
-  <br><br>
-    <!-- Page-specific (main) content here -->
-      <main class="container">
-        <section class="new-tweet">
-          <form action="/tweets/" method="POST">
-            <label for="tweet-text"><b>What are you humming about?</b></label>
-            <textarea name="text" id="tweet-text"></textarea>
-            <div class="space-between">
-              <button class="tweet-button" type="submit">Tweet</button>
-              <output class="remainings" name="counter" class="counter" for="tweet-text">140</output>
-            </div>
-            <p class="error-message" id="error-message1">
-              <i class="fa-solid fa-triangle-exclamation"></i>
-              <span>Input cannot be blank, please try again with a valid input.</span>
-            </p>
-            <p class="error-message" id="error-message2">
-              <i class="fa-solid fa-triangle-exclamation"></i>
-              <span>Exceeding the maximum characters allowed, please try again with a valid input.</span>
-            </p>
-          </form>
+        <div class="header-avatar">
+          <img src="/images/profile-hex.png"> 
+        </div>
+        <div class="header-name">
+            <h2>Vivian&nbsp</h2>
+            <h2 class="last-name">Fang</h2>
+        </div>
+    </header>
+    <br><br>
+      <!-- Page-specific (main) content here -->
+        <main class="container">
+          <section class="new-tweet">
+            <form action="/tweets/" method="POST">
+              <label for="tweet-text"><b>What are you humming about?</b></label>
+              <textarea name="text" id="tweet-text"></textarea>
+              <div class="space-between">
+                <button class="tweet-button" type="submit">Tweet</button>
+                <output class="remainings" name="counter" class="counter" for="tweet-text">140</output>
+              </div>
+              <p class="error-message" id="error-message1">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Input cannot be blank, please try again with a valid input.</span>
+              </p>
+              <p class="error-message" id="error-message2">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Exceeding the maximum characters allowed, please try again with a valid input.</span>
+              </p>
+            </form>
+  
+          </section>
+          <section class="container" id="tweet-container">
+          </section>
+        </main>
+    </div>
 
-        </section>
-        <section class="container" id="tweet-container">
-        </section>
-      </main>
   </body>
 </html>

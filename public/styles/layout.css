@@ -29,3 +29,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* responsive function when changing devices */
+
+@media screen and (min-width: 768px) {
+  .responsive {
+    display: flex;
+    flex-direction: row;
+  }
+}
+

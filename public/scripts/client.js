@@ -80,12 +80,16 @@ $(document).ready(function() {
   $('form').submit(function(event) {
     event.preventDefault();
     const dataSer = $(this).serialize();
+    let countSpace = dataSer.split('%20').length - 1;
+    let textLength = dataSer.length - countSpace * 2;
+    console.log(textLength);
+
 
     if (dataSer === 'text=') {
       $('#error-message2').slideUp();
       return $('#error-message1').slideDown();
     }
-    if (dataSer.length >= 145) {
+    if (textLength > 145) {
       $('#error-message1').slideUp();
       return $('#error-message2').slideDown();
     }

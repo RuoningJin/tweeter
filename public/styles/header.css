@@ -3,7 +3,6 @@
   height: 520px;
   padding-top: 120px;
   background-color: #ffbc1f;
-
   background-image: url("/images/arches.png")
 }
 
@@ -13,7 +12,12 @@
   align-items: center;
 }
 
-.header-position .header-name {
+.header-name{
   display: flex;
   justify-content: center;
+  color: white; 
+  font-weight: lighter;
+}
+.header-name .last-name{
+  font-weight: lighter;
 }
