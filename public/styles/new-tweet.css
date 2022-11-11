@@ -81,11 +81,10 @@ main form {
   padding-right: 1em;
   border-style: solid;
   border-width: thick;
-
+  word-break: break-word;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 /* tweet boxes */
@@ -135,4 +134,11 @@ article.tweet footer i {
 }
 article.tweet footer i:hover {
   color: rgb(199, 169, 0);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
 }

@@ -82,9 +82,8 @@ $(document).ready(function() {
     const dataSer = $(this).serialize();
     let countSpace = dataSer.split('%20').length - 1;
     let textLength = dataSer.length - countSpace * 2;
-    console.log(textLength);
 
-
+    //returns error codes when having invalid inputs
     if (dataSer === 'text=') {
       $('#error-message2').slideUp();
       return $('#error-message1').slideDown();
@@ -94,6 +93,7 @@ $(document).ready(function() {
       return $('#error-message2').slideDown();
     }
     $('.error-message').slideUp();
+
     $.post({
       url: '/tweets',
       data: dataSer,

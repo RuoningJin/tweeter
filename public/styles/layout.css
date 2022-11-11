@@ -25,6 +25,7 @@ body {
  */
 
 .container {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,6 +37,11 @@ body {
   .responsive {
     display: flex;
     flex-direction: row;
+    padding-top: 159px;
+  }
+  .header-position {
+    margin-left: 1.5em;
+    
   }
 }
 

@@ -1,8 +1,9 @@
 .navbar-top {
   position: fixed;
-  height: 120px;
+  height: 80px;
   width: 100vw;
-  background-color: transparent;
+  background-color: #ffbc1f;
+  background-image: url("/images/arches.png");
   color: #FFFFFF;
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -15,13 +16,12 @@
 
 .navbar-top .navbar-brand {
   font-family: 'Bungee', cursive, sans-serif;
-  padding-top: 36px;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .navbar-top .navbar-add {
   padding-top: 1em;
-  font-size: 28px;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@
 }
 #input-button i {
   color: white;
-  font-size: x-large;
+  font-size: large;
 }
 #input-button i:hover {
   color: royalblue;
@@ -42,6 +42,7 @@
 @media screen and (min-width: 768px) {
   .navbar-top {
     background-color: #4056A1;
+    height: 120px;
   }
   #input-button i {
     color: antiquewhite;
@@ -49,5 +50,13 @@
   }
   #input-button i:hover {
     color: gold;
+  }
+  .navbar-top .navbar-brand {
+    padding-top: 36px;
+    font-size: 48px;
+  }
+  .navbar-top .navbar-add {
+    padding-top: 1em;
+    font-size: 28px;
   }
 }
