@@ -106,5 +106,6 @@ $(document).ready(function() {
             renderTweets(userData[userData.length - 1]);
           });
       });
+    $('form').trigger('reset');
   });
 });
